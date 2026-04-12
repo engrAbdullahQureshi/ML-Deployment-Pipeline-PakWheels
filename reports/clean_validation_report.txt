@@ -1,0 +1,61 @@
+=======================================================
+  DATA QUALITY REPORT — CLEAN DATASET
+=======================================================
+
+Overall Result : PASSED
+Total Checks   : 16
+Passed         : 16
+Failed         : 0
+
+───────────────────────────────────────────────────────
+  DETAILED RESULTS
+───────────────────────────────────────────────────────
+
+[PASS]  Column: sale_id
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: sale_id
+         Check : expect_column_values_to_be_unique
+
+[PASS]  Column: customer_id
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: product_id
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: sale_ts
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: quantity
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: quantity
+         Check : expect_column_values_to_be_between
+
+[PASS]  Column: quantity
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: amount
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: amount
+         Check : expect_column_values_to_be_between
+
+[PASS]  Column: amount
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: channel
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: channel
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: currency
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: currency
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: TABLE-LEVEL
+         Check : expect_table_row_count_to_be_between
+

@@ -1,0 +1,67 @@
+=======================================================
+  DATA QUALITY REPORT (AFTER CLEANING) — PAKWHEELS DATASET
+=======================================================
+
+Overall Result : PASSED
+Total Checks   : 18
+Passed         : 18
+Failed         : 0
+
+───────────────────────────────────────────────────────
+  DETAILED RESULTS
+───────────────────────────────────────────────────────
+
+[PASS]  Column: addref
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: addref
+         Check : expect_column_values_to_be_unique
+
+[PASS]  Column: city
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: make
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: model
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: transmission
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: transmission
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: registered
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: mileage
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: mileage
+         Check : expect_column_values_to_be_between
+
+[PASS]  Column: mileage
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: year
+         Check : expect_column_values_to_be_between
+
+[PASS]  Column: engine
+         Check : expect_column_values_to_be_between
+
+[PASS]  Column: engine
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: price
+         Check : expect_column_values_to_be_between
+
+[PASS]  Column: fuel
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: assembly
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: TABLE-LEVEL
+         Check : expect_table_row_count_to_be_between
+

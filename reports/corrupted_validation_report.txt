@@ -1,0 +1,66 @@
+=======================================================
+  DATA QUALITY REPORT — CORRUPTED DATASET
+=======================================================
+
+Overall Result : FAILED
+Total Checks   : 16
+Passed         : 11
+Failed         : 5
+
+───────────────────────────────────────────────────────
+  DETAILED RESULTS
+───────────────────────────────────────────────────────
+
+[PASS]  Column: sale_id
+         Check : expect_column_values_to_not_be_null
+
+[FAIL]  Column: sale_id
+         Check : expect_column_values_to_be_unique
+         Detail: {'element_count': 101980, 'unexpected_count': 3960, 'unexpected_percent': 3.883114336144342, 'partial_unexpected_list': [16, 60, 122, 172, 223, 296, 326, 369, 422, 510, 609, 633, 666, 672, 700, 738, 745, 892, 894, 908], 'missing_count': 0, 'missing_percent': 0.0, 'unexpected_percent_total': 3.883114336144342, 'unexpected_percent_nonmissing': 3.883114336144342, 'partial_unexpected_counts': [{'value': 16, 'count': 1}, {'value': 60, 'count': 1}, {'value': 122, 'count': 1}, {'value': 172, 'count': 1}, {'value': 223, 'count': 1}, {'value': 296, 'count': 1}, {'value': 326, 'count': 1}, {'value': 369, 'count': 1}, {'value': 422, 'count': 1}, {'value': 510, 'count': 1}, {'value': 609, 'count': 1}, {'value': 633, 'count': 1}, {'value': 666, 'count': 1}, {'value': 672, 'count': 1}, {'value': 700, 'count': 1}, {'value': 738, 'count': 1}, {'value': 745, 'count': 1}, {'value': 892, 'count': 1}, {'value': 894, 'count': 1}, {'value': 908, 'count': 1}], 'partial_unexpected_index_list': [14, 54, 114, 162, 211, 283, 312, 352, 404, 490, 584, 608, 640, 646, 671, 709, 716, 859, 861, 875]}
+
+[FAIL]  Column: customer_id
+         Check : expect_column_values_to_not_be_null
+         Detail: {'element_count': 101980, 'unexpected_count': 1000, 'unexpected_percent': 0.9805844283192783, 'partial_unexpected_list': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan], 'partial_unexpected_counts': [{'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}, {'value': nan, 'count': 1}], 'partial_unexpected_index_list': [98444, 98445, 98446, 98447, 98448, 98449, 98450, 98451, 98452, 98453, 98454, 98455, 98456, 98457, 98458, 98459, 98460, 98461, 98462, 98463]}
+
+[PASS]  Column: product_id
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: sale_ts
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: quantity
+         Check : expect_column_values_to_not_be_null
+
+[FAIL]  Column: quantity
+         Check : expect_column_values_to_be_between
+         Detail: {'element_count': 101980, 'unexpected_count': 529, 'unexpected_percent': 0.5187291625808982, 'partial_unexpected_list': [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1], 'missing_count': 0, 'missing_percent': 0.0, 'unexpected_percent_total': 0.5187291625808982, 'unexpected_percent_nonmissing': 0.5187291625808982, 'partial_unexpected_counts': [{'value': -1, 'count': 20}], 'partial_unexpected_index_list': [99421, 99422, 99423, 99424, 99425, 99426, 99427, 99428, 99429, 99430, 99431, 99432, 99433, 99434, 99435, 99436, 99437, 99438, 99439, 99440]}
+
+[PASS]  Column: quantity
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: amount
+         Check : expect_column_values_to_not_be_null
+
+[FAIL]  Column: amount
+         Check : expect_column_values_to_be_between
+         Detail: {'element_count': 101980, 'unexpected_count': 500, 'unexpected_percent': 0.49029221415963914, 'partial_unexpected_list': [999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0, 999999.0], 'missing_count': 0, 'missing_percent': 0.0, 'unexpected_percent_total': 0.49029221415963914, 'unexpected_percent_nonmissing': 0.49029221415963914, 'partial_unexpected_counts': [{'value': 999999.0, 'count': 20}], 'partial_unexpected_index_list': [99940, 99941, 99942, 99943, 99944, 99945, 99946, 99947, 99948, 99949, 99950, 99951, 99952, 99953, 99954, 99955, 99956, 99957, 99958, 99959]}
+
+[PASS]  Column: amount
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: channel
+         Check : expect_column_values_to_not_be_null
+
+[FAIL]  Column: channel
+         Check : expect_column_values_to_be_in_set
+         Detail: {'element_count': 101980, 'unexpected_count': 978, 'unexpected_percent': 0.9590115708962541, 'partial_unexpected_list': ['UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN', 'UNKNOWN'], 'missing_count': 0, 'missing_percent': 0.0, 'unexpected_percent_total': 0.9590115708962541, 'unexpected_percent_nonmissing': 0.9590115708962541, 'partial_unexpected_counts': [{'value': 'UNKNOWN', 'count': 20}], 'partial_unexpected_index_list': [101002, 101003, 101004, 101005, 101006, 101007, 101008, 101009, 101010, 101011, 101012, 101013, 101014, 101015, 101016, 101017, 101018, 101019, 101020, 101021]}
+
+[PASS]  Column: currency
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: currency
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: TABLE-LEVEL
+         Check : expect_table_row_count_to_be_between
+

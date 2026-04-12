@@ -1,0 +1,78 @@
+=======================================================
+  DATA QUALITY REPORT — PAKWHEELS DATASET
+=======================================================
+
+Overall Result : FAILED
+Total Checks   : 19
+Passed         : 16
+Failed         : 3
+
+───────────────────────────────────────────────────────
+  DETAILED RESULTS
+───────────────────────────────────────────────────────
+
+[PASS]  Column: addref
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: addref
+         Check : expect_column_values_to_be_unique
+
+[PASS]  Column: city
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: make
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: model
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: transmission
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: transmission
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: registered
+         Check : expect_column_values_to_not_be_null
+
+[PASS]  Column: mileage
+         Check : expect_column_values_to_not_be_null
+
+[FAIL]  Column: mileage
+         Check : expect_column_values_to_be_between
+         Bad rows  : 2453
+         Bad %     : 3.94%
+
+[PASS]  Column: mileage
+         Check : expect_column_values_to_be_of_type
+
+[PASS]  Column: year
+         Check : expect_column_values_to_be_between
+
+[FAIL]  Column: engine
+         Check : expect_column_values_to_be_between
+         Bad rows  : 455
+         Bad %     : 0.73%
+         Null rows : 3
+
+[PASS]  Column: engine
+         Check : expect_column_values_to_be_of_type
+
+[FAIL]  Column: price
+         Check : expect_column_values_to_be_between
+         Bad rows  : 209
+         Bad %     : 0.34%
+         Null rows : 472
+
+[PASS]  Column: fuel
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: body
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: assembly
+         Check : expect_column_values_to_be_in_set
+
+[PASS]  Column: TABLE-LEVEL
+         Check : expect_table_row_count_to_be_between
+
