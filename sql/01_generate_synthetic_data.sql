@@ -64,9 +64,9 @@ WHERE random() < 0.01;
 
 
 COPY sales_clean_base
-TO 'G:/25280074_DE_Assignment_3/data/clean_synthetic_dataset.csv'
+TO '/absolute/path/to/repo/data/clean_synthetic_dataset.csv'
 WITH CSV HEADER;
 
 COPY sales_dirty
-TO 'G:/25280074_DE_Assignment_3/data/corrupted_synthetic_dataset.csv'
+TO '/absolute/path/to/repo/data/corrupted_synthetic_dataset.csv'
 WITH CSV HEADER;

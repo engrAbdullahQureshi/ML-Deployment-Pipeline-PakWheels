@@ -135,4 +135,4 @@ if st.button(" Predict Price Category", use_container_width=True):
 # FOOTER
 
 st.divider()
-st.caption("Abdullah Qureshi - Data Engineering Assignment 3 - PakWheels Car Price Predictor")
+st.caption("PakWheels Car Price Predictor · SVM model served with FastAPI")

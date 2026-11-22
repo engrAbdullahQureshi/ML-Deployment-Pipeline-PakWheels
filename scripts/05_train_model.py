@@ -119,4 +119,4 @@ model_pipeline = {
 
 joblib.dump(model_pipeline, "models/pakwheels_svm_model.pkl")
 print(f"\nModel saved → models/pakwheels_svm_model.pkl")
-print("\nDONE! Task 1 complete.")
+print("\nDone.")
